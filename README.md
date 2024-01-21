@@ -22,10 +22,10 @@ Overfitting in Decision Tree: The high training accuracy but lower test accuracy
 Efficiency of KNN: KNN's short training time is notable, but its slightly lower test accuracy indicates that it might benefit from parameter tuning (like adjusting the number of neighbors).
 
 
-### Model improvement
+## Model improvement
 
-# Create a new features for age and job interaction
-# List of job category columns
+### Create a new features for age and job interaction
+### List of job category columns
 
 ```
 job_columns = ['job_blue-collar', 'job_entrepreneur', 'job_housemaid', 'job_management', 
