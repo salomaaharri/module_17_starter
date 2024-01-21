@@ -15,6 +15,11 @@ This involves analyzing historical data from previous telephone marketing campai
 
 Now, we aim to compare the performance of the Logistic Regression model to our KNN algorithm, Decision Tree, and SVM models.  Using the default settings for each of the models, fit and score each.  Also, be sure to compare the fit time of each of the models.
 
+### Link to notebook
+
+https://github.com/salomaaharri/module_17_starter/blob/master/prompt_III.ipynb
+
+
 ### Training Time and Accuracy analysis:
 
 Balance Between Training Time and Accuracy: Logistic Regression and SVM, despite their longer training times (especially SVM), provide the best balance between training and test accuracy. This indicates that they generalize well without overfitting.
