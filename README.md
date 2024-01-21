@@ -43,6 +43,7 @@ job_columns = ['job_blue-collar', 'job_entrepreneur', 'job_housemaid', 'job_mana
 
 ### Analysis:
 
+```
 The Logistic Regression model's performance remained stable with the new features, but the training time slightly increased. This suggests that the new features didn't significantly impact the model's ability to generalize.
 
 The KNN model shows a minor improvement in both training and test accuracy, indicating that the new features might be slightly beneficial for this model.
@@ -51,18 +52,21 @@ The Decision Tree model's test accuracy shows a slight improvement. However, it 
 
 The SVM model's training time increased notably with no improvement in accuracy. This might be due to the increased complexity of the data with new features. SVMs are computationally intensive, and more features can lead to longer training times.
 
+```
 
-Let's work KNN hyperparameters: Best parameters for KNN: {'metric': 'euclidean', 'n_neighbors': 15, 'weights': 'uniform'}
+### Let's work KNN hyperparameters: Best parameters for KNN: {'metric': 'euclidean', 'n_neighbors': 15, 'weights': 'uniform'}
 
+```
 Improved Performance: The increase in the number of neighbors (n_neighbors: 15) compared to the default value (usually 5) suggests that the model benefits from considering more neighbors to make a prediction. This can help in smoothing the decision boundaries and potentially reducing overfitting.
 
 Distance Metric: The fact that 'Euclidean' came out as the best metric suggests that the standard Euclidean distance is effective for your data in measuring similarity between instances.
 
 Uniform Weights: The choice of 'uniform' weights indicates that all neighbors contribute equally to the classification of a new point. This approach works well when the density of the data is relatively uniform. If the data has varying densities, sometimes 'distance' weighting might perform better.
 
+```
 ### Best parameters for Decision Tree: {'max_depth': 10, 'max_features': 'sqrt', 'min_impurity_decrease': 0.1, 'min_samples_leaf': 1, 'min_samples_split': 2}
 
-
+```
 KNN: Improved slightly with hyperparameter tuning. The test accuracy increased modestly, indicating that the adjustments in the number of neighbors and distance metric were beneficial.
 
 Logistic Regression and SVM: Both now show strong performance with a test accuracy of 0.89. This indicates that these models not only provide a good balance between training time and accuracy but are also highly effective with the current feature set. Their performance is notable given that they are achieving the same level of accuracy as the more complex models.
@@ -74,9 +78,11 @@ Random Forest: Although it shows slightly lower performance compared to the tune
 The choice between Logistic Regression, SVM, and Decision Tree can now be based more on factors like model interpretability, training time, and how they align with your specific application requirements. All three models are performing similarly in terms of accuracy.
 
 Despite the simplicity of Logistic Regression, it performs on par with more complex models like SVM and Decision Tree. This underscores the effectiveness of feature engineering and the right choice of model for the specific characteristics of this dataset.
+```
 
 
 ### The confusion matrix for the Decision Tree model tells the following:
+```
 
 True Negative (TN): 7303 observations were correctly predicted as class '0' 
 False Positive (FP): 0 observations were incorrectly predicted as class '1' 
@@ -95,8 +101,10 @@ Lack of Positive Predictions: The fact that there are zero true positives and ze
 Potential Overfitting: While the accuracy might seem high because the majority class is being predicted almost perfectly, the model is not useful for its inability to predict the minority class. This might be a case of overfitting to the majority class.
 
 Business Impact: If the goal is to identify potential subscribers (class '1'), the model is not serving its purpose. All potential subscribers are being missed (935 false negatives), which could represent a significant loss of opportunity.
+```
 
 ### The confusion matrix for Logistic Regression shows the following:
+```
 
 True Negative (TN): 7285 observations where the model correctly predicted the negative class.
 False Positive (FP): 18 observations where the model incorrectly predicted the positive class.
@@ -115,8 +123,10 @@ False Negatives: There are a significant number of false negatives, meaning that
 Model Sensitivity: The sensitivity (or recall) for the positive class is low, indicating the model's limited ability to detect the positive class instances.
 
 Precision for Positive Class: Although the model has predicted few positives, the precision (the proportion of positive identifications that were actually correct) is low because the false positives are close to the true positives in number.
+```
 
 ### The confusion matrix for the K-Nearest Neighbors model shows the following:
+```
 
 True Negative (TN): 7251 observations where the model correctly predicted the negative class.
 False Positive (FP): 52 observations where the model incorrectly predicted the positive class.
@@ -138,9 +148,11 @@ Addressing class imbalance (if present).
 Revisiting the chosen value for n_neighbors and considering weight adjustments.
 Potentially including more informative features or feature engineering to better capture distinctions between classes.
 Comparison to Other Models: When comparing this KNN model to the previously discussed Logistic Regression and Decision Tree models, it is underperforming in terms of correctly identifying the positive class. All models are struggling with the positive class, but the KNN model is not as extreme in its predictions towards the negative class.
+```
 
 
 ### The confusion matrix for the SVM model shows the following:
+```
 
 True Negative (TN): 7295 observations were correctly predicted as class '0' (e.g., the client did not subscribe to a term deposit).
 False Positive (FP): 8 observations were incorrectly predicted as class '1' (e.g., the client subscribed to a term deposit) when they are actually class '0'.
@@ -157,8 +169,10 @@ Challenges with Positive Class: The model managed to predict a very small number
 Low Sensitivity: The sensitivity (or recall) for the positive class is very low, indicating the model's limited ability to detect the positive class instances.
 
 Moderate Precision for Positive Class: The precision (the proportion of positive identifications that were actually correct) is higher for SVM than for the Decision Tree and KNN models, but the low number of true positives still indicates a performance issue.
+```
 
 ### The confusion matrix for the RandomForest classifier shows the following details:
+```
 
 True Negative (TN): 7061 observations where the model correctly predicted the negative class ('0').
 False Positive (FP): 242 observations where the model incorrectly predicted the positive class ('1').
@@ -174,10 +188,10 @@ False Positives and Negatives: There are still a considerable number of false ne
 Sensitivity and Specificity: The model has achieved better sensitivity (ability to detect true positives) than the previous models but at the cost of more false positives, which reduces its specificity (ability to detect true negatives).
 
 Model Balance: The RandomForest model seems to be more balanced in terms of recognizing both classes compared to the other models, although there's still room for improvement, especially in reducing false negatives.
+```
 
 
 ### Conclusions
-
 
 In this practical application assignment, we aimed to compare the performance of four different classifier models: k-Nearest Neighbors (kNN), Decision Trees, Logistic Regression, and Support Vector Machines (SVM), on a dataset related to the marketing of bank products over the telephone. Our objectives were to understand the dataset, prepare it for modeling, apply these classifiers, and interpret their performance with a focus on their application in a business context.
 
