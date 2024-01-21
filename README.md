@@ -7,11 +7,6 @@
 Our dataset comes from the UCI Machine Learning repository [link](https://archive.ics.uci.edu/ml/datasets/bank+marketing).  The data is from a Portugese banking institution and is a collection of the results of multiple marketing campaigns.  We will make use of the article accompanying the dataset [here](CRISP-DM-BANK.pdf) for more information on the data and features.
 
 
-### Understanding the Data
-
-To gain a better understanding of the data, please read the information provided in the UCI link above, and examine the **Materials and Methods** section of the paper.  How many marketing campaigns does this data represent?
-
-
 ### Understanding the Task
 
 The business objective of this task is to increase the efficiency of directed marketing campaigns for long-term deposit subscriptions at a Portuguese banking institution by developing a predictive model that can accurately identify potential customers who are most likely to subscribe to a term deposit.
