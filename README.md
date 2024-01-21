@@ -18,11 +18,7 @@ The business objective of this task is to increase the efficiency of directed ma
 
 This involves analyzing historical data from previous telephone marketing campaigns to understand the key factors that contribute to a successful subscription. The model aims to assist marketing managers in making informed decisions about whom to contact, thereby optimizing the allocation of resources such as human effort, time, and budget. The ultimate goal is to maintain or improve the success rate of these campaigns while reducing the number of contacts made, leading to cost-effective and targeted marketing strategies.
 
-Now, we aim to compare the performance of the Logistic Regression model to our KNN algorithm, Decision Tree, and SVM models.  Using the default settings for each of the models, fit and score each.  Also, be sure to compare the fit time of each of the models.  Present your findings in a `DataFrame` similar to that below:
-
-| Model | Train Time | Train Accuracy | Test Accuracy |
-| ----- | ---------- | -------------  | -----------   |
-|     |    |.     |.     |
+Now, we aim to compare the performance of the Logistic Regression model to our KNN algorithm, Decision Tree, and SVM models.  Using the default settings for each of the models, fit and score each.  Also, be sure to compare the fit time of each of the models.
 
 ### Training Time and Accuracy analysis:
 
