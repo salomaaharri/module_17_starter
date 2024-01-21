@@ -33,11 +33,11 @@ job_columns = ['job_blue-collar', 'job_entrepreneur', 'job_housemaid', 'job_mana
                'job_unemployed', 'job_unknown']
 
 
-	Model	Train Time	Train Accuracy	Test Accuracy
+	Model	            Train Time	Train Accuracy	Test Accuracy
 0	Logistic Regression	0.638171	0.887982	0.886137
-1	KNN	0.007312	0.890531	0.873513
-2	Decision Tree	0.108112	0.916601	0.862709
-3	SVM	28.648827	0.888376	0.886623
+1	KNN	                0.007312	0.890531	0.873513
+2	Decision Tree	    0.108112	0.916601	0.862709
+3	SVM	                28.648827	0.888376	0.886623
 
 ```
 
