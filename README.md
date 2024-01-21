@@ -7,17 +7,12 @@
 Our dataset comes from the UCI Machine Learning repository [link](https://archive.ics.uci.edu/ml/datasets/bank+marketing).  The data is from a Portugese banking institution and is a collection of the results of multiple marketing campaigns.  We will make use of the article accompanying the dataset [here](CRISP-DM-BANK.pdf) for more information on the data and features.
 
 
-### Problem 1: Understanding the Data
+### Understanding the Data
 
 To gain a better understanding of the data, please read the information provided in the UCI link above, and examine the **Materials and Methods** section of the paper.  How many marketing campaigns does this data represent?
 
 
-### Problem 4: Understanding the Task
-
-After examining the description and data, your goal now is to clearly state the *Business Objective* of the task.  State the objective below.
-
-
-### ANSWER:
+### Understanding the Task
 
 The business objective of this task is to increase the efficiency of directed marketing campaigns for long-term deposit subscriptions at a Portuguese banking institution by developing a predictive model that can accurately identify potential customers who are most likely to subscribe to a term deposit.
 
@@ -29,7 +24,7 @@ Now, we aim to compare the performance of the Logistic Regression model to our K
 | ----- | ---------- | -------------  | -----------   |
 |     |    |.     |.     |
 
-### ANSWER:
+### Training Time and Accuracy analysis:
 
 Balance Between Training Time and Accuracy: Logistic Regression and SVM, despite their longer training times (especially SVM), provide the best balance between training and test accuracy. This indicates that they generalize well without overfitting.
 Overfitting in Decision Tree: The high training accuracy but lower test accuracy for the Decision Tree model suggests it might be overfitting the training data.
